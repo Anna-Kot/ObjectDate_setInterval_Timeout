@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="date" style="font-size: 40px; padding-top: 30px;">22.02.2020</div>
+        <div class="time" style="font-size: 110px; margin-top: 30px;">21:00:13</div>
+    </div>
+    <div class="middle">
+        <div class="middle_left">
+            <!-- <div class="time_back" style="font-size: 35px;">
+                <div class="q1">00</div> :
+                <div class="q2">00</div> :
+                <div class="q3">00</div> :
+                <div class="q4">000</div>
+            </div> -->
+            <div id="timer" style="font-size: 56px; padding-top: 30px; margin-bottom: 30px;">
+                <span id="hours"> 00</span>:
+                <span id="mins"> 00</span>:
+                <span id="seconds"> 00</span>:
+                <span id="milisec"> 00</span> 
+            </div>
+            <!-- <div class="button_middle">
+                <input type="button" value="START" class="start1">
+                <input type="button" value="LOOP"  class="loop1">
+                <input type="button" value="STOP"  class="stop1">
+                <input type="button" value="RESET" class="reset1">
+            </div> -->
+            <div id="controls" style="margin-top: 50px;">
+                <button id="start">Start</button>
+                <button id="loop" disabled>Loop</button>
+                <button id="stop" disabled>Stop</button>
+                <button id="reset" disabled>Reset</button>
+            </div>
+        </div>
+        <div class="middle_right"></div>
+    </div>
+    <div class="bottom">
+        <div class="bottom_left">
+            <div class="timer2" style="margin-top: 10px;">25</div>
+            <p style="font-size: 30px; margin-top: 0;">MINUTES</p>
+            <label class="bottom_plus">
+                <input type="button" value="+" class="plus">
+                <input type="button" value="-" class="minus">
+            </label>
+        </div>
+        <div class="bottom_right">
+            <div class="timer_back" style="margin-top: 10px; margin-bottom: 30px;">
+                <span id="left_number">00</span>:
+                <span id="right_number">00</span> 
+                <!-- <div class="left_number">00</div> : <div class="right_number">00</div> -->
+            </div>
+            <!-- <div class="button button_bottom">
+                <input type="button" value="START" class="start2" onclick="startInterval()">
+                <input type="button" value="STOP"  class="stop2" onclick="stopInterval()" disabled>
+                <input type="button" value="RESET" class="reset2" onclick="resetInterval()" disabled>
+            </div> -->
+            <div class="button button_bottom">
+                <button id="start2">Start</button>
+                <button id="stop2" disabled>Stop</button>
+                <button id="reset2" disabled>Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
